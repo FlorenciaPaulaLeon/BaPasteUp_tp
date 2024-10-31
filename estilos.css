@@ -84,3 +84,26 @@ footer a:hover {
 .fondotext{
     background-color: black;
 }
+
+.fondotext {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .fondotext {
+      font-size: 0.8rem;
+    }
+  }
+  
+.carousel-caption a {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption a {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+  }
+  
