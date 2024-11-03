@@ -100,6 +100,7 @@ footer a:hover {
     display: block !important; /* Forzando la visibilidad */
 }
 
+
 @media (max-width: 768px) {
     .fondotext {
         font-size: 0.8rem;

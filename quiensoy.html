@@ -5,66 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quien Soy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-<header> <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
+
+<header> 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">BA Paste Up</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="murales.html">Murales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="artistas.html">Artistas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="eventos.html">Eventos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="historia.html">Historia</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="murales.html" data-bs-toggle="tooltip" title="Explora murales">Murales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artistas.html" data-bs-toggle="tooltip" title="Conoce a los artistas">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html" data-bs-toggle="tooltip" title="Próximos eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html" data-bs-toggle="tooltip" title="Historia de los murales">Historia</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </nav>
-      </header>
-<div class="hero-section">
+        </div>
+    </nav>
+</header>
 
-    
+<div class="hero-section">
     <div class="overlay"></div> <!-- Capa oscura superpuesta -->
-    
     <div class="container hero-content">
         <div class="row align-items-center">
-            <!-- Columna de texto -->
             <div class="col-lg-6 text-center text-lg-start">
                 <h1 class="display-4 fw-bold">Quien soy</h1>
                 <p class="lead">Hola! Soy Florencia, tengo 26 años y soy estudiante de Artes Multimediales en la Universidad Nacional de las Artes (UNA). Me apasiona explorar la intersección entre el arte y la tecnología, y estoy en constante búsqueda de nuevas formas de expresión digital.</p>
-                
-               
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contáctame</button>
             </div>
 
-            <!-- Columna de imagen redonda -->
             <div class="col-lg-6 text-center">
                 <img src="img/mifoto.jpeg" alt="foto de Florencia Leon" class="rounded-circle rounded-image img-fluid">
             </div>
         </div>
-
     </div>
 </div>
-   <!-- Footer -->
-    <footer class="mt-5">
-        <ul>
-            <li><a href="quiensoy.html">QUIÉN SOY</a></li>
-            <li><a href="newsletter.html">NEWSLETTER</a></li>
-        </ul>
-    </footer>
+
+<!-- Modal de contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <li><a href="newsletter.html">NEWSLETTER</a></li>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/tooltips.js"></script>
 </body>
 </html>
